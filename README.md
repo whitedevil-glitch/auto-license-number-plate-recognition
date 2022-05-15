@@ -30,3 +30,8 @@ Paste the source path which copied and save this configurations. After this step
 The tesseract installation completed. You can confirm the installation from the command line. When we run ``` tesseract ``` command on the command line, it should give us information about the program.
   
  </b>
+
+
+## Now You can run the program. 
+
+# Made with ❤️
