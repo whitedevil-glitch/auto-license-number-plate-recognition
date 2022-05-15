@@ -17,7 +17,7 @@ def extract_num(img_name):
     # Converting into Gray
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
     # Detecting plate
-    nplate = cascade.detectMultiScale(gray,1.1,4) #making the plate gray
+    nplate = cascade.detectMultiScale(gray,1.1,4) # making the plate gray
     for (x,y,w,h) in nplate:
         # Crop a portion of plate
         a,b = (int(0.02*img.shape[0]), int(0.025*img.shape[1]))
@@ -25,15 +25,15 @@ def extract_num(img_name):
         # make image more darker to identify the Liscense Plate Register no.
         ## iMAGE PROCESSING {thresholding image for accuracy}
         kernel = np.ones((1, 1), np.uint8)
-        plate = cv2.dilate(plate, kernel, iterations=1) #dilate technique
-        plate = cv2.erode(plate, kernel, iterations=1) #erode technique
+        plate = cv2.dilate(plate, kernel, iterations=1) # dilate technique
+        plate = cv2.erode(plate, kernel, iterations=1) # erode technique
         plate_gray = cv2.cvtColor(plate,cv2.COLOR_BGR2GRAY) #converting img to grey
         (thresh, plate) = cv2.threshold(plate_gray, 127, 255, cv2.THRESH_BINARY)
         # Feed Image to OCR engine
-        read = pytesseract.image_to_string(plate) #reading the text and convertin to string
-        read = ''.join(e for e in read if e.isalnum()) #cleaning string by is alpha num func
+        read = pytesseract.image_to_string(plate) # reading the text and convertin to string
+        read = ''.join(e for e in read if e.isalnum()) # cleaning string by is alpha num func
         print(read)
-        stat = read[0:2] #returns first two letters of detected plate for recognizing state
+        stat = read[0:2] # returns first two letters of detected plate for recognizing state
         try:
         # Fetch the State information
             print('Car Belongs to',states[stat])
@@ -52,5 +52,5 @@ def extract_num(img_name):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-# Let's make a function call
+# function call
 extract_num('./test_images/t4.jpg')
