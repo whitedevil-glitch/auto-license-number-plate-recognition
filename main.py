@@ -17,7 +17,7 @@ def extract_num(img_name):
     # Converting into Gray
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
     # Detecting plate
-    nplate = cascade.detectMultiScale(gray,1.1,4) # making the plate gray
+    nplate = cascade.detectMultiScale(gray,1.1,4) # making the plate grey
     for (x,y,w,h) in nplate:
         # Crop a portion of plate
         a,b = (int(0.02*img.shape[0]), int(0.025*img.shape[1]))
