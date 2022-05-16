@@ -53,4 +53,4 @@ def extract_num(img_name):
     cv2.destroyAllWindows()
 
 # function call
-extract_num('./test_images/t4.jpg')
+extract_num('./t6.jpeg')
