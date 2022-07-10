@@ -34,4 +34,4 @@ The tesseract installation completed. You can confirm the installation from the 
 
 ## Now You can run the program. 
 
-# Made with ❤️
+# Made with ❤️ by White-Devil
