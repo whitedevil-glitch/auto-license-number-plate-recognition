@@ -17,7 +17,7 @@ Link for tesseract.exe --> http://digi.bib.uni-mannheim.de/tesseract/tesseract-o
 <b>
 The installation depends on your operating system. I am using this program on Windows.
 
-We should add an PATH to windows system variables. Actually it’s an easy step. Firstly we find and copy the root folder of the tesseract installation. :
+We should add an PATH to windows system variables. Actually it’s an easy step. Firstly we find and copy the root folder of the tesseract installation. That should be looking like this:
 
 ``` C:\Program Files\Tesseract-OCR ```
 
