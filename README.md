@@ -11,13 +11,13 @@ Automatically Detects Number Plate's Numbers and Text from a Car Image using Pyt
 
 <br>
 
-Link for tesseract.exe --> http://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-setup-4.00.00dev.exe
+--> <a href="http://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-setup-4.00.00dev.exe"> Link for tesseract.exe </a>
 
 
 <b>
 The installation depends on your operating system. I am using this program on Windows.
 
-We should add an PATH to windows system variables. Actually it’s an easy step. Firstly we find and copy the root folder of the tesseract installation. That should be looking like this:
+We should add a PATH to windows system variables. Actually it’s an easy step. First we need to find and copy the root folder of the tesseract installation. That should be looking like this:
 
 ``` C:\Program Files\Tesseract-OCR ```
 
