@@ -20,9 +20,9 @@ The installation depends on your operating system. I am using this program on Wi
 We need to add a PATH to windows system variables. Actually it’s an easy step. First we have to find and copy the root folder of the tesseract installation. That should be looking like this:
 
 ``` C:\Program Files\Tesseract-OCR ```
-[It may vary depending on your installation location.]
+[It may vary depending on your installation location. Just make sure evrything is installed in the C drive, so that it's default.]
 
-And then in the search bar of the windows Advanced System Settings
+And search for `Advanced System Settings`.
 
 ### Advanced system settings > Advanced > Environment variables > PATH > New
 
